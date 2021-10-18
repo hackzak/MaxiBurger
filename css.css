@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1695da;
+  margin: 0 auto;
+  line-height: 50px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.title-box {
+  background-color: white;
+  position: relative;
+  top: 300px;
+  z-index: 999;
+  padding: 20px;
+  box-shadow: -13px 13px 2px 1px black;
+}
+
+div.title-box h1,
+p {
+  font-family: "kenia", cursive;
+}
+
+header h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+header p {
+  font-size: 25px;
+  text-align: center;
+}
+
+/* slider*/
+
+.slides {
+  display: flex;
+  flex-direction: row;
+  width: calc(-500px * 4);
+  height: 720px;
+  animation: glisse 15s infinite ease;
+}
+
+.slides {
+  opacity: 0.4;
+}
+
+img {
+  width: 1000px;
+  position: relative;
+  top: -160px;
+}
+
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
+  }
+
+  10% {
+    transform: translateX(-500px);
+  }
+
+  33% {
+    transform: translateX(-1000px);
+  }
+
+  66% {
+    transform: translateX(-500px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*navigation menu*/
+
+.centered {
+  width: 100%;
+  display: flex;
+  transform: translateX(-50px);
+}
+
+nav {
+  margin: 200px;
+}
+
+nav.menu ul {
+  display: flex;
+  padding: 16px;
+}
+
+.nav-item {
+  float: 1;
+  height: 70px;
+}
+
+nav.menu {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+nav.menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  color: white;
+  justify-content: center;
+  transition: 0.5s all;
+}
+
+nav.menu ul li:hover {
+  transform: scale(0.8);
+  transition: 0.5s all;
+}
+
+nav.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+.nav-item {
+  padding: 130px;
+  position: relative;
+  top: -333px;
+  flex: 1;
+  width: 86px;
+}
+
+.pizza {
+  background-image: url(pizza.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.salade {
+  background-image: url(salade.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.burger {
+  background-image: url(burbur.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boissons {
+  background-image: url(boissons.jpg);
+  background-size: cover;
+}
+
+/*section plat*/
+
+section.pizza {
+  position: relative;
+  top: -350px;
+}
+
+.item {
+  background-color: white;
+  margin: 20px;
+  display: flex;
+}
+
+section {
+  padding: 50px;
+}
+
+section img {
+  width: 300px;
+  position: relative;
+  top: 0px;
+}
+
+.item-infos {
+  position: relative;
+  top: center;
+  padding: 20px;
+}
