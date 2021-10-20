@@ -108,6 +108,7 @@ nav.menu {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
+  width: 100%;
 }
 
 nav.menu ul li {
@@ -160,6 +161,7 @@ nav.menu ul li a {
   background-size: cover;
 }
 
+
 /*section plat*/
 
 section.pizza {
@@ -171,6 +173,17 @@ section.pizza {
   background-color: white;
   margin: 20px;
   display: flex;
+}
+
+
+.item {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 section {
