@@ -25,8 +25,7 @@ div.title-box {
   box-shadow: -13px 13px 2px 1px black;
 }
 
-div.title-box h1,
-p {
+div.title-box h1,p {
   font-family: "kenia", cursive;
 }
 
@@ -88,20 +87,26 @@ img {
   width: 100%;
   display: flex;
   transform: translateX(-50px);
+  cursor: pointer;
+  justify-content: space-between;
 }
 
 nav {
   margin: 200px;
+  width: 100%;
+  justify-content: space-between;
 }
 
 nav.menu ul {
   display: flex;
   padding: 16px;
+  width: 100%;
 }
 
 .nav-item {
   float: 1;
   height: 70px;
+  width: 100%;
 }
 
 nav.menu {
@@ -117,17 +122,20 @@ nav.menu ul li {
   color: white;
   justify-content: center;
   transition: 0.5s all;
+  width: 100%;
 }
 
 nav.menu ul li:hover {
-  transform: scale(0.8);
+  transform: scale(0.7);
   transition: 0.5s all;
+  width: 100%;
 }
 
 nav.menu ul li a {
   color: white;
   text-decoration: none;
   font-size: 50px;
+  width: 100%;
 }
 
 .nav-item {
@@ -135,7 +143,7 @@ nav.menu ul li a {
   position: relative;
   top: -333px;
   flex: 1;
-  width: 86px;
+  width: 100%;
 }
 
 .pizza {
@@ -179,6 +187,7 @@ section.pizza {
 .item {
   cursor: pointer;
   transition: 0.3s;
+  width: 100%;
 }
 
 .item:hover {
@@ -200,4 +209,10 @@ section img {
   position: relative;
   top: center;
   padding: 20px;
+}
+
+nev.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
