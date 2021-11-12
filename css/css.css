@@ -5,41 +5,53 @@
 
 body {
   background-color: #1695da;
-  margin: 0 auto;
+  margin: 0;
   line-height: 50px;
 }
 
 header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
+  /* width: 100vw !important; */
+  height: 45.7vw;
 }
 
-div.title-box {
+.title-box {
+  /* height: 50% !important; */
   background-color: white;
   position: relative;
-  top: 300px;
-  z-index: 999;
+  /* top: 300px; */
+  z-index: 1;
   padding: 20px;
   box-shadow: -13px 13px 2px 1px black;
 }
 
-div.title-box h1,p {
+div.title-box h1,
+p {
   font-family: "kenia", cursive;
 }
 
-header h1 {
+.title-box h1 {
   font-size: 50px;
   text-align: center;
 }
 
-header p {
+.title-box p {
   font-size: 25px;
   text-align: center;
 }
 
 /* slider*/
+
+.slider {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0 0 5% 0; */
+}
 
 .slides {
   display: flex;
@@ -50,13 +62,15 @@ header p {
 }
 
 .slides {
+  /* height: 100% !important; */
   opacity: 0.4;
+  /* padding: 20px; */
 }
 
 img {
   width: 1000px;
   position: relative;
-  top: -160px;
+  /* top: -160px; */
 }
 
 @keyframes glisse {
@@ -84,36 +98,35 @@ img {
 /*navigation menu*/
 
 .centered {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   transform: translateX(-50px);
   cursor: pointer;
   justify-content: space-between;
 }
 
-nav {
-  margin: 200px;
-  width: 100%;
-  justify-content: space-between;
+.container {
+  /* width: 99.4vmax; */
 }
 
 nav.menu ul {
   display: flex;
-  padding: 16px;
-  width: 100%;
+  margin: 0;
+  padding: 16px 0 0 0;
+  /* width: 100%; */
 }
 
 .nav-item {
   float: 1;
   height: 70px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 nav.menu {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  width: 100%;
+  width: 1002vmax !important;
 }
 
 nav.menu ul li {
@@ -122,13 +135,13 @@ nav.menu ul li {
   color: white;
   justify-content: center;
   transition: 0.5s all;
-  width: 100%;
+  /* width: 100%; */
 }
 
 nav.menu ul li:hover {
   transform: scale(0.7);
   transition: 0.5s all;
-  width: 100%;
+  /* width: 100%; */
 }
 
 nav.menu ul li a {
@@ -139,7 +152,7 @@ nav.menu ul li a {
 }
 
 .nav-item {
-  padding: 130px;
+  padding: 127.2px;
   position: relative;
   top: -333px;
   flex: 1;
@@ -147,25 +160,25 @@ nav.menu ul li a {
 }
 
 .pizza {
-  background-image: url(pizza.jpg);
+  background-image: url(../img/pizza.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .salade {
-  background-image: url(salade.jpg);
+  background-image: url(../img/salade.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .burger {
-  background-image: url(burbur.jpg);
+  background-image: url(../img/burbur.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .boissons {
-  background-image: url(boissons.jpg);
+  background-image: url(../img/boissons.jpg);
   background-size: cover;
 }
 
@@ -174,13 +187,14 @@ nav.menu ul li a {
 
 section.pizza {
   position: relative;
-  top: -350px;
+  top: -333px;
 }
 
 .item {
   background-color: white;
   margin: 20px;
   display: flex;
+  width: 80vmax !important;
 }
 
 
